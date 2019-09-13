@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Breaking Bad Game</title>
 </head>
 <body>
+    <div class= "header">
+        <h1>Breaking Bad Battle Game</h1>
+    </div>
+        
     
+
+    <div class= "instructions">
+        <h3>How To Play</h3>
+        <br></br>
+        <ol>
+			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+			<li>There are four characters below.</li>
+			<ul>
+				<li id="Walter">Walter White</li>
+				<li id="Saul">Saul Goodman</li>
+				<li id="Jesse">Jesse Pinkman</li>
+				<li id="Gus">Gus Fring</li>
+			</ul>
+			<li>By clicking on a character, you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number.</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each character is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each character.</li>
+		</ol>
+    </div>
+
+    <div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+    </div>
+    
+    <div class="characters">
+		<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwizksDggszkAhVOuZ4KHZ6WCNEQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.today.com%2Fpopculture%2Fbryan-cranston-teases-breaking-bads-walter-white-may-be-alive-2D79736354&psig=AOvVaw1g8D1qDiB5vrkiy2SM_sS0&ust=1568403022268108" class=characterImage id="one" alt="Walter White">
+		<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjByrjBg8zkAhWJpp4KHdrEBxQQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.highsnobiety.com%2F2015%2F02%2F06%2Fbest-saul-goodman-breaking-bad-moments%2F&psig=AOvVaw1ppqp1hDaVLSXaPsIebrj_&ust=1568403213700080" class=characterImage id="two" alt="Saul Goodman">
+		<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjX66aZg8zkAhXBu54KHb5QBIUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.screengeek.net%2F2018%2F11%2F07%2Fbreaking-bad-movie-aaron-paul%2F&psig=AOvVaw07zgHcuFVP_3SisOMEYLVG&ust=1568403115297413" class=characterImage id= "three" alt="Jesse Pinkman">
+		<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjztc_Yg8zkAhVUvZ4KHcqyBakQjRx6BAgBEAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGus_Fring&psig=AOvVaw14kMjRz1cvnDePG6tPKPNy&ust=1568403281831888" class=characterImage id= "four" alt="Gus Fring">
+	</div>
+
+    <div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+
 </body>
 </html>
