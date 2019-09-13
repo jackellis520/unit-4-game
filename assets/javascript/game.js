@@ -10,7 +10,7 @@ $( document ).ready(function(){
     var num2= Math.floor(Math.random()*11+1)
     var num3= Math.floor(Math.random()*11+1)
     var num4= Math.floor(Math.random()*11+1)
-    // Setting up random numbers for each jewel
+    // Setting up random numbers for each character
     // Random number has to be between 1 - 12
     // 
     var userTotal= 0; 
