@@ -1,0 +1,61 @@
+body{
+    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi57IethMzkAhWD_J4KHdVoAiAQjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwallpapercave.com%252Fbreaking-bad-background%26psig%3DAOvVaw3pRwsYv-aF_-LcQdEG2KsI%26ust%3D1568403391491748&psig=AOvVaw3pRwsYv-aF_-LcQdEG2KsI&ust=1568403391491748")
+}
+
+div{
+    background-color: white;
+    margin: 10px;
+    width: 25%;
+}
+
+div{
+    border: solid 2px antiquewhite;
+    padding: 10px;
+}
+
+h1, h3, span{
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+ol{
+    list-style: decimal inside;
+}
+
+ul{
+    list-style: disc inside;
+    text-indent: 20px;
+}
+
+div.header, div.characters{
+    background-color: #e0e0eb;
+}
+
+div.header, div.intsructions{
+    width: 50%;
+}
+
+.numberToMatch, .winsAndLosses{
+    float: left;
+    width: 15%;
+    height: 60px;
+}
+
+.userTotal{
+    width: 15%;
+    height: 60px;
+}
+
+.characters{
+    clear: both;
+}
+
+.characterImage{
+    height: 60px;
+    margin: 10px;
+}
+
